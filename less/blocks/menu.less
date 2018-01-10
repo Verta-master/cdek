@@ -1,0 +1,29 @@
+.menu {
+  background-color: #1d1d1b;
+}
+
+.menu__list {
+  min-height: 70px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  
+  li {
+    margin-right: 60px;
+  }
+}
+
+.menu__link {
+  color: #fff;
+  
+  &:hover,
+  &:active,
+  &--active {
+    color: @yellow;
+  }
+}
+
+.menu__btn {
+  display: none;
+}

@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta  name="viewport" content="width=device-width,initial-scale=1">
+  <title></title>
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+  <header class="header">
+    <div class="header__top wrapper">
+      <div class="logo">
+        <img src="img/logo.png" alt="Logo" width="164" height="36">
+      </div>
+      <div class="header__link">
+        <a href="#">НАВИГАЦИЯ</a>
+        <a href="#">новороссийск</a>
+      </div>
+      <div class="header__block">
+        <a href="Tel:+79964098278" class="header__phone">8 996 409-82-78</a>
+        <button type="button" class="btn header__call">заказать звонок</button>
+        <a href="#" class="btn btn--grey header__enter"><span>Войти</span></a>
+      </div>
+    </div>
+    <nav class="menu menu--closed">
+      <button type="button" class="menu__btn"><span class="visually-hidden">Меню</span></button>
+      <ul class="menu__list wrapper">
+        <li class="menu__item">
+          <a href="#start" class="menu__link menu__link--active">В НАЧАЛО</a>
+        </li>
+        <li class="menu__item">
+          <a href="#actions" class="menu__link">АКЦИИ</a>
+        </li>
+        <li class="menu__item">
+          <a href="#company" class="menu__link">О КОМПАНИИ</a>
+        </li>
+        <li class="menu__item">
+          <a href="#contacts" class="menu__link">КОНТАКТЫ</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  
+  <main>
+    <section class="promo wrapper" id="start">
+      <div class="promo__title">
+        <h1>Доставка которую Вы искали</h1>
+        <p>Наши тарифы существенно ниже, чем у зарубежных курьерских компаний, при этом качество предоставляемых услуг соответствуют современным международным требованиям логистики.</p>
+      </div>
+      <figure class="promo__img">
+        <img src="img/person.png" alt="Доставка" width="515" height="552">
+      </figure>
+      <form action="#" method="get" class="calc">
+        <p class="calc__cloud">Рассчитайте стоимость доставки прямо сейчас!</p>
+        <figure class="calc__icon">
+          <img src="img/icon-user.png" alt="" width="22" height="19">
+        </figure>
+        <input type="text" name="from" class="calc__input calc__input--round" placeholder="Откуда?">
+        <input type="text" name="to" class="calc__input calc__input--round" placeholder="Куда?">
+        <input type="text" name="height" class="calc__input calc__input--height" placeholder="Высота (см)">
+        <input type="text" name="width" class="calc__input calc__input--width" placeholder="Ширина (см)">
+        <input type="text" name="depth" class="calc__input calc__input--depth" placeholder="Глубина (см)">
+        <input type="text" name="weight" class="calc__input calc__input--round calc__input--weight" placeholder="Вес (кг)">
+        <button type="submit" class="calc__btn">РАССЧИТАТЬ</button>
+      </form>
+    </section>
+    
+    <section class="actions" id="actions">
+      <div class="swiper-container">
+        <ul class="swiper-wrapper">
+          <li class="swiper-slide actions__slide">
+            <img src="img/img-1.jpg" alt="специальное предложение" width="570" height="500">
+            <div class="actions__text">
+              <span class="actions__btn">специальное предложение</span>
+              <h2>Уникальные условия поставщикам чего-то</h2>
+              <p>Компания «СДЭК» имеет в качестве основной палитруфирменных цветов: тёмно-зелёный, зелёный, светло-зелёный,чёрный и белый. Эти цвета основной палитры способствуют...</p>
+              <a href="#">подробнее</a>
+            </div>
+          </li>
+          <li class="swiper-slide actions__slide">
+            <img src="img/img-2.jpg" alt="АКЦИЯ" width="570" height="500">
+            <div class="actions__text">
+              <span class="actions__btn">АКЦИЯ</span>
+              <h2>Скидка 20% для онлайн магазинов</h2>
+              <p>Компания «СДЭК» имеет в качестве основной палитруфирменных цветов: тёмно-зелёный, зелёный, светло-зелёный,чёрный и белый. Эти цвета основной палитры способствуют...</p>
+              <a href="#">подробнее</a>
+            </div>
+          </li>
+          <li class="swiper-slide actions__slide">
+            <img src="img/img-3.jpg" alt="АКЦИЯ" width="570" height="500">
+            <div class="actions__text">
+              <span class="actions__btn">АКЦИЯ</span>
+              <h2>Новогодняя доставка за 8 часов</h2>
+              <p>Компания «СДЭК» имеет в качестве основной палитруфирменных цветов: тёмно-зелёный, зелёный, светло-зелёный,чёрный и белый. Эти цвета основной палитры способствуют...</p>
+              <a href="#">подробнее</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+    
+    <section class="company wrapper" id="company">
+      <div class="company__text">
+        <h2>О компании</h2>
+        <p>Мы оказываем людям и компаниям спектр услуг своевременной и гарантированной доставки, постоянно повышая уровень сервиса, внедряя новые технологии, эффективно используя внутренний потенциал и внешние ресурсы.</p>
+        <p>Мы дорожим нашими клиентами и работаем для удовлетворения их потребностей в качественных услугах.</p>
+        <p>Мировой уровень качества. Мы считаем нашей обязанностью достичь совершенства во всех наших делах, постоянно улучшая качество предоставляемых услуг и тем самым, повышая нашу ценность для клиента.</p>
+        <a href="#" class="btn company__btn">Презентация о Компании СДЭК</a>
+      </div>
+      <figure class="company__figure">
+        <img src="img/parcels.jpg" alt="Презентация о Компании СДЭК" width="1041" height="404">
+      </figure>
+      <ul class="company__list">
+        <li class="company__item">
+          <p>Более 2500 курьеров, прошедших специальную подготовку</p>
+        </li>
+        <li class="company__item">
+          <p>Более 11.000 обращений в call-центр в сутки</p>
+        </li>
+        <li class="company__item">
+          <p>Количество клиентов компании в России - более 12.000</p>
+        </li>
+        <li class="company__item">
+          <p>Более 20.000 населенных пунктов в РФ, куда осуществляется доставка</p>
+        </li>
+        <li class="company__item">
+          <p>10437 миллионов отправлений в 2016 году</p>
+        </li>
+        <li class="company__item">
+          <p>Более 750 уникальных пунктов выдачи заказов</p>
+        </li>
+      </ul>
+      <button type="button" class="btn company__get">получить специальные условия</button>
+    </section>
+    
+    <section class="survey">
+      <div class="wrapper survey__wrap">
+        <div class="survey__block">
+          <h2>Анкета для заключения договора</h2>
+          <p>Заполненную анкету отправляйте на почту <a href="#">cdek-novoros@cdek.ru</a><br>Заключение договора ни к чему не обязывает.</p>
+        </div>
+        <a href="#" class="survey__link" download>скачать анкету</a>
+      </div>
+    </section>
+    
+    <section class="brands wrapper">
+      <h2>С нами работают <span>280 320</span> магазинов</h2>
+      <ul class="brands__list">
+        <li><img src="img/logo-aliexpress.jpg" alt="AliExpress" width="170" height="140"></li>
+        <li><img src="img/logo-sberbank.jpg" alt="СберБанк" width="170" height="140"></li>
+        <li><img src="img/logo-alfa-bank.jpg" alt="Альфа-Банк" width="170" height="140"></li>
+        <li><img src="img/logo-nornikel.jpg" alt="НорНикель" width="170" height="140"></li>
+        <li><img src="img/logo-ulmart.jpg" alt="Юлмарт" width="170" height="140"></li>
+        <li><img src="img/logo-vsemayki.jpg" alt="vsemayki.ru" width="170" height="140"></li>
+        <li><img src="img/logo-ozon.jpg" alt="ozon.ru" width="170" height="140"></li>
+        <li><img src="img/logo-mediaMarkt.jpg" alt="MediaMarkt" width="170" height="140"></li>
+        <li><img src="img/logo-aizel.jpg" alt="Aizel" width="170" height="140"></li>
+        <li><img src="img/logo-collins.jpg" alt="Colins" width="170" height="140"></li>
+        <li><img src="img/logo-amway.jpg" alt="Amway" width="170" height="140"></li>
+        <li><img src="img/logo-player.jpg" alt="плеер.ру" width="170" height="140"></li>
+      </ul>
+    </section>
+    
+    <section class="contacts">
+      <div class="wrapper">
+        <div class="contacts__text">
+          <h2>Пункты самовывоза по всей России более <span>700</span></h2>
+          <div class="contacts__wrap">
+            <a href="#" class="btn contacts__map">СМОТРЕТЬ ПУНКТЫ ВЫДАЧИ</a>
+            <a href="#" class="btn contacts__nocity">НЕТ НЕОБХОДИМОГО ГОРОДА</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section class="survey">
+      <div class="wrapper survey__wrap">
+        <div class="survey__block">
+          <h2>Остались вопросы?</h2>
+          <p>Задайте их нам, мы ответим в ближайшее время</p>
+        </div>
+        <a href="#" class="survey__link" download>задать вопрос</a>
+      </div>
+    </section>
+  </main>
+  
+  <footer class="footer">
+    <div class="wrapper">
+      <div class="logo">
+        <img src="img/logo.png" alt="Logo" width="164" height="36">
+      </div>
+      <p>Официальный сайт логистической компании CDEK</p>
+      <p>г. Новороссийск, ул. Какая-то, д. 156, <a href="#">cdek@cdek.ru</a></p>
+      
+    </div>
+  </footer>
+  
+  <script src="js/script.js"></script>
+</body>
+</html>

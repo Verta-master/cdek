@@ -1,0 +1,124 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.header__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  background-color: #fff;
+}
+
+.header__link {
+  margin-right: auto;
+}
+
+.header__link a {
+  padding-left: 30px;
+  font-size: 12px;
+  font-weight: 700;
+  color: #1d1d1b;
+  opacity: 0.5;
+  text-transform: uppercase;
+  
+  &:last-child {
+    margin-left: 50px;
+    position: relative;
+    
+    &::before {
+      content: "";
+      position: absolute;
+      top: -2px;
+      left: 0;
+      width: 12px;
+      height: 16px;
+      background-position: -635px -5px;
+      background-image: url(../img/sprite.png);
+      background-repeat: no-repeat;
+    }
+  }
+}
+
+.header__block {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.header__phone {
+  padding-left: 37px;
+  font-size: 18px;
+  color: #1d1d1b;
+  font-weight: 700;
+  position: relative;
+  
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 18px;
+    height: 18px;
+    background-position: -583px -5px;
+    background-image: url(../img/sprite.png);
+    background-repeat: no-repeat;
+  }
+}
+
+.header__call {
+  margin-left: 33px;
+  margin-right: 28px;
+  padding-left: 35px;
+  width: 227px;
+  min-height: 46px;
+  
+  &::before {
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: 35px;
+    width: 14px;
+    height: 14px;
+    background-image: url(../img/sprite.png);
+    background-repeat: no-repeat;
+    background-position: -611px -5px;
+  }
+}
+
+.header__enter {
+  width: 144px;
+  min-height: 46px;
+  padding-right: 32px;
+  
+  span {
+    opacity: 0.3;
+    transition: ease-out 0.3s;
+  }
+  
+  &::after {
+    content: "";
+    position: absolute;
+    top: 12px;
+    right: 35px;
+    width: 12px;
+    height: 17px;
+    opacity: 0.3;
+    background-position: -561px -5px;
+    background-image: url(../img/sprite.png);
+    background-repeat: no-repeat;
+    transition: ease-out 0.3s;
+  }
+  
+  &:hover,
+  &:active {
+    span,
+    &::after {
+      opacity: 1;
+      transition: ease-out 0.3s;
+    }
+  }
+}
