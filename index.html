@@ -50,21 +50,40 @@
       <figure class="promo__img">
         <img src="img/person.png" alt="Доставка" width="515" height="552">
       </figure>
+      
       <form action="#" method="get" class="calc">
         <p class="calc__cloud">Рассчитайте стоимость доставки прямо сейчас!</p>
         <figure class="calc__icon">
           <img src="img/icon-user.png" alt="Рассчитайте стоимость доставки" width="22" height="19">
         </figure>
-        <input type="text" name="from" class="calc__input calc__input--round" placeholder="Откуда?">
-        <input type="text" name="to" class="calc__input calc__input--round" placeholder="Куда?">
-        <div class="calc__wrap">
-          <input type="text" name="height" class="calc__input calc__input--height" placeholder="Высота (см)">
-          <span>X</span>
-          <input type="text" name="width" class="calc__input calc__input--width" placeholder="Ширина (см)">
-          <span>X</span>
-          <input type="text" name="depth" class="calc__input calc__input--depth" placeholder="Глубина (см)">
+        <div class="calc__field">
+          <input type="text" name="from" id="from" class="calc__input calc__input--round">
+          <label for="from" class="calc__label calc__label--left">Откуда?</label>
         </div>
-        <input type="text" name="weight" class="calc__input calc__input--round calc__input--weight" placeholder="Вес (кг)">
+        <div class="calc__field">
+          <input type="text" name="to" id="to" class="calc__input calc__input--round">
+          <label for="to" class="calc__label calc__label--left">Куда?</label>
+        </div>
+        <div class="calc__wrap">
+          <div class="calc__field">
+            <input type="text" name="height" id="height" class="calc__input calc__input--height">
+            <label for="height" class="calc__label">Высота<span>(см)</span></label>
+          </div>
+          <span class="calc__divider">X</span>
+          <div class="calc__field">
+            <input type="text" name="width" id="width" class="calc__input calc__input--width">
+            <label for="width" class="calc__label">Ширина<span>(см)</span></label>
+          </div>
+          <span class="calc__divider">X</span>
+          <div class="calc__field">
+            <input type="text" name="depth" id="depth" class="calc__input calc__input--depth">
+            <label for="depth" class="calc__label">Глубина<span>(см)</span></label>
+          </div>
+        </div>
+        <div class="calc__field">
+          <input type="text" name="weight" id="weight" class="calc__input calc__input--round calc__input--weight">
+          <label for="weight" class="calc__label">Вес<span>(кг)</span></label>
+        </div>
         <button type="submit" class="calc__btn">РАССЧИТАТЬ</button>
       </form>
     </section>
@@ -199,6 +218,8 @@
     </div>
   </footer>
   
+  <script src="js/jquery-3.2.1.min.js"></script>
   <script src="js/script.js"></script>
+
 </body>
 </html>
