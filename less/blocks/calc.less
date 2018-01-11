@@ -1,0 +1,88 @@
+.calc {
+  width: 100%;
+  min-height: 80px;
+  padding: 10px;
+  margin-bottom: 215px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 40px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 16px 39.56px 3.44px rgba(35, 38, 50, 0.1);
+}
+
+.calc__cloud {
+  position: absolute;
+  left: 0;
+  top: -150%;
+  max-width: 302px;
+  margin: 0;
+  padding: 30px;
+  border-radius: 30px;
+  background-color: @green;
+  background-image: linear-gradient(to top, rgb(19,147,36) 0%, rgb(0,144,42) 100%);
+  box-shadow: 0px 11px 39.56px 3.44px rgba(35, 38, 50, 0.1);
+  color: #fff;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.calc__icon {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  .radial(@green);
+}
+
+.calc__input {
+  width: 230px;
+  height: 60px;
+  padding: 0 30px;
+  color: #000;
+  font-size: 12px;
+  font-weight: 700;
+  background-color: rgb(250, 250, 250);
+  box-shadow: inset 0px 0px 6.65px 0.35px rgba(133, 133, 133, 0.13);
+  
+  &::placeholder {
+    opacity: 0.35;
+  }
+  
+  &--round {
+    border-radius: 30px;
+  }
+  
+  &--height {
+    width: 95px;
+    border-radius: 30px 0 0 30px;
+  }
+  
+  &--width {
+    width: 90px;
+  }
+  
+  &--depth {
+    width: 102px;
+    border-radius: 0 30px 30px 0;
+  }
+  
+  &--weight {
+    width: 80px;
+  }
+}
+
+.calc__btn {
+  width: 170px;
+  height: 60px;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #fff;
+  border-radius: 30px;
+  background-color: rgb(49, 49, 43);
+}

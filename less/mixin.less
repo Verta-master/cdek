@@ -13,3 +13,34 @@
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+.deco(@color) {
+  position: relative;
+  
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 60px;
+    height: 4px;
+    border-radius: 4px;
+    background-color: @color;
+  }
+    
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 65px;
+    width: 4px;
+    height: 4px;
+    border-radius: 4px;
+    background-color: rgb(1, 144, 42);
+  }
+}
+
+.radial(@color) {
+  background-color: @color;
+  background-image: radial-gradient(circle, rgb(107,160,6) 0%, rgb(0,144,42) 100%);
+}
