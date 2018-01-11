@@ -53,13 +53,17 @@
       <form action="#" method="get" class="calc">
         <p class="calc__cloud">Рассчитайте стоимость доставки прямо сейчас!</p>
         <figure class="calc__icon">
-          <img src="img/icon-user.png" alt="" width="22" height="19">
+          <img src="img/icon-user.png" alt="Рассчитайте стоимость доставки" width="22" height="19">
         </figure>
         <input type="text" name="from" class="calc__input calc__input--round" placeholder="Откуда?">
         <input type="text" name="to" class="calc__input calc__input--round" placeholder="Куда?">
-        <input type="text" name="height" class="calc__input calc__input--height" placeholder="Высота (см)">
-        <input type="text" name="width" class="calc__input calc__input--width" placeholder="Ширина (см)">
-        <input type="text" name="depth" class="calc__input calc__input--depth" placeholder="Глубина (см)">
+        <div class="calc__wrap">
+          <input type="text" name="height" class="calc__input calc__input--height" placeholder="Высота (см)">
+          <span>X</span>
+          <input type="text" name="width" class="calc__input calc__input--width" placeholder="Ширина (см)">
+          <span>X</span>
+          <input type="text" name="depth" class="calc__input calc__input--depth" placeholder="Глубина (см)">
+        </div>
         <input type="text" name="weight" class="calc__input calc__input--round calc__input--weight" placeholder="Вес (кг)">
         <button type="submit" class="calc__btn">РАССЧИТАТЬ</button>
       </form>
