@@ -89,7 +89,7 @@
     </section>
     
     <section class="actions" id="actions">
-      <div class="swiper-container">
+      <div class="swiper-container actions__slider">
         <ul class="swiper-wrapper">
           <li class="swiper-slide actions__slide">
             <img src="img/img-1.jpg" alt="специальное предложение" width="570" height="500">
@@ -118,8 +118,27 @@
               <a href="#">подробнее</a>
             </div>
           </li>
+          <li class="swiper-slide actions__slide">
+            <img src="img/img-1.jpg" alt="специальное предложение" width="570" height="500">
+            <div class="actions__text">
+              <span class="actions__btn">специальное предложение</span>
+              <h2>Уникальные условия поставщикам чего-то</h2>
+              <p>Компания «СДЭК» имеет в качестве основной палитруфирменных цветов: тёмно-зелёный, зелёный, светло-зелёный,чёрный и белый. Эти цвета основной палитры способствуют...</p>
+              <a href="#">подробнее</a>
+            </div>
+          </li>
+          <li class="swiper-slide actions__slide">
+            <img src="img/img-2.jpg" alt="АКЦИЯ" width="570" height="500">
+            <div class="actions__text">
+              <span class="actions__btn">АКЦИЯ</span>
+              <h2>Скидка 20% для онлайн магазинов</h2>
+              <p>Компания «СДЭК» имеет в качестве основной палитруфирменных цветов: тёмно-зелёный, зелёный, светло-зелёный,чёрный и белый. Эти цвета основной палитры способствуют...</p>
+              <a href="#">подробнее</a>
+            </div>
+          </li>
         </ul>
       </div>
+      <div class="swiper-pagination"></div>
     </section>
     
     <section class="company wrapper" id="company">
@@ -220,6 +239,19 @@
   
   <script src="js/jquery-3.2.1.min.js"></script>
   <script src="js/script.js"></script>
-
+  <script src="js/swiper.min.js"></script>
+  <script>
+  var swiper = new Swiper('.swiper-container', {
+    slidesPerView: 3,
+    spaceBetween: 30,
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+      renderBullet: function (index, className) {
+        return '<span class="' + className + '">' + (index + 1) + '</span>';
+      },
+    },
+  });
+  </script>
 </body>
 </html>
