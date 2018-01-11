@@ -44,3 +44,10 @@
   background-color: @color;
   background-image: radial-gradient(circle, rgb(107,160,6) 0%, rgb(0,144,42) 100%);
 }
+
+.text-gradient {
+  background-image: linear-gradient(to top, rgb(107,160,6) 0%, rgb(107,160,6) 30%, rgb(0,144,42) 100%);
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}

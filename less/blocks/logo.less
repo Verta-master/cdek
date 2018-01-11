@@ -1,0 +1,43 @@
+.logo__info {
+  padding-left: 57px;
+  font-family: "Museo Sans", "Arial", sans-serif;
+  color: #a6a6a6;
+  position: relative;
+  transition: ease-out 0.3s;
+  
+  &::before {
+    content: "";
+    position: absolute;
+    top: -12px;
+    left: -2px;
+    width: 38px;
+    height: 51px;
+    background-image: url(../img/logo-laylay.png);
+    background-repeat: no-repeat;
+    transition: ease-out 0.3s;
+  }
+  
+  &::after {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 45px;
+    width: 1px;
+    height: 28px;
+    background-color: rgb(214, 214, 214);
+    transition: ease-out 0.3s;
+  }
+}
+
+.logo__title {
+  margin: 0;
+  margin-top: -5px;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.logo__text {
+  margin: 0;
+  font-size: 9px;
+  font-weight: 500;
+}

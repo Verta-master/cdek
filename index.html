@@ -211,7 +211,7 @@
           <h2>Пункты самовывоза по всей России более <span>700</span></h2>
           <div class="contacts__wrap">
             <a href="#" class="btn contacts__map">СМОТРЕТЬ ПУНКТЫ ВЫДАЧИ</a>
-            <a href="#" class="btn contacts__nocity">НЕТ НЕОБХОДИМОГО ГОРОДА</a>
+            <a href="#" class="btn btn--light contacts__nocity">НЕТ НЕОБХОДИМОГО ГОРОДА</a>
           </div>
         </div>
       </div>
@@ -223,25 +223,63 @@
           <h2>Остались вопросы?</h2>
           <p>Задайте их нам, мы ответим в ближайшее время</p>
         </div>
-        <a href="#" class="survey__link" download>задать вопрос</a>
+        <a href="#" class="survey__link survey__link--pic">задать вопрос</a>
       </div>
     </section>
   </main>
   
-  <footer class="footer">
-    <div class="wrapper">
+  <footer class="footer wrapper">
       <div class="logo">
         <img src="img/logo.png" alt="Logo" width="164" height="36">
       </div>
       <p>Официальный сайт логистической компании CDEK</p>
       <p>г. Новороссийск, ул. Какая-то, д. 156, <a href="#">cdek@cdek.ru</a></p>
-      
-    </div>
+      <a href="http://laylaydigital.ru/">
+        <div class="logo__info">
+          <p class="logo__title">Lay Lay</p>
+          <p class="logo__text">Создание сайта</p>
+        </div>
+      </a>
   </footer>
+  
+  <div style="display: none;">
+    <div class="modal modal--call">
+      <h2 class="text-gradient">Заказать звонок</h2>
+      <form action="#" method="post" class="modal__choice">
+        <input type="radio" name="radio" id="conditions" class="modal__radio" checked>
+        <label for="conditions" class="modal__label">Я хочу узнать условия сотрудничества</label>
+        <input type="radio" name="radio" id="contract" class="modal__radio">
+        <label for="contract" class="modal__label">Я хочу заключить договор</label>
+        <input type="radio" name="radio" id="courier" class="modal__radio">
+        <label for="courier" class="modal__label">Я хочу вызвать курьера</label>
+        <input type="radio" name="radio" id="info" class="modal__radio">
+        <label for="info" class="modal__label">Я хочу получить информацию по моему заказу</label>
+        <button type="submit" class="btn modal__btn">ПРОДОЛЖИТЬ</button>
+      </form>
+      <button type="button" class="modal__close arcticmodal-close"></button>
+    </div>
+  </div>
+  
+  <div style="display: none;">
+    <div class="modal modal--request">
+      <h2 class="text-gradient">Заказать звонок</h2>
+      <p>Перезвоним в течение получаса и за 5 минут выясним подробности о вашем магазине: где вы находитесь, какие грузы и куда нужно будет доставлять, срочность и ещё некоторые детали. Предложим варианты сотрудничества сразу по телефону.</p>
+      <form action="#" method="post" class="modal__request">
+        <input type="text" name="name" class="modal__input" placeholder="Ваше имя*" required>
+        <input type="tel" name="phone" class="modal__input" placeholder="Ваш телефон*" required>
+        <input type="email" name="email" class="modal__input" placeholder="Email">
+        <textarea name="message" class="modal__message" placeholder="Ваш вопрос или комментарий"></textarea>
+        <button type="submit" class="btn modal__btn">ПРОДОЛЖИТЬ</button>
+      </form>
+      <button type="button" class="modal__close arcticmodal-close"></button>
+    </div>
+  </div>
   
   <script src="js/jquery-3.2.1.min.js"></script>
   <script src="js/script.js"></script>
   <script src="js/swiper.min.js"></script>
+  <script src="js/jquery.arcticmodal-0.3.min.js"></script>
+<!-- Slider -->
   <script>
   var swiper = new Swiper('.swiper-container', {
     slidesPerView: 3,
@@ -254,6 +292,33 @@
       },
     },
   });
+  </script>
+<!-- Modal windows -->
+  <script>
+    $(".header__call").click(function(){
+      $(function(){
+        $(".modal--call").arcticmodal({
+          overlay: {
+          css: {
+            backgroundColor: "#000",
+            opacity: .8
+            }
+          }
+        });
+      });
+    });
+    $(".survey__link--pic").click(function(){
+      $(function(){
+        $(".modal--request").arcticmodal({
+          overlay: {
+          css: {
+            backgroundColor: "#000",
+            opacity: .8
+            }
+          }
+        });
+      });
+    });
   </script>
 </body>
 </html>

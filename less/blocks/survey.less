@@ -105,7 +105,7 @@
     text-decoration: none !important;
   }
   
-  &:before {
+  &::before {
     content: "";
     position: absolute;
     top: 8px;
@@ -117,5 +117,9 @@
     background-image: url(../img/icon-download.png);
     background-repeat: no-repeat;
     background-position: center;
+  }
+  
+  &--pic::before {
+    background-image: url(../img/icon-faq.png);
   }
 }
