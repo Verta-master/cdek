@@ -12,33 +12,32 @@
       <div class="logo">
         <img src="img/logo.png" alt="Logo" width="164" height="36">
       </div>
-      <div class="header__link">
-        <a href="#">НАВИГАЦИЯ</a>
-        <a href="#">новороссийск</a>
-      </div>
+      <nav class="menu">
+        <button type="button" class="menu__btn">НАВИГАЦИЯ</button>
+        <div class="menu__wrap">
+          <ul class="menu__list wrapper">
+            <li class="menu__item">
+              <a href="#start" class="menu__link menu__link--active">В НАЧАЛО</a>
+            </li>
+            <li class="menu__item">
+              <a href="#actions" class="menu__link">АКЦИИ</a>
+            </li>
+            <li class="menu__item">
+              <a href="#company" class="menu__link">О КОМПАНИИ</a>
+            </li>
+            <li class="menu__item">
+              <a href="#contacts" class="menu__link">КОНТАКТЫ</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <a href="#" class="header__link">новороссийск</a>
       <div class="header__block">
         <a href="Tel:+79964098278" class="header__phone">8 996 409-82-78</a>
         <button type="button" class="btn header__call">заказать звонок</button>
         <a href="#" class="btn btn--grey header__enter"><span>Войти</span></a>
       </div>
     </div>
-    <nav class="menu menu--closed">
-      <button type="button" class="menu__btn"><span class="visually-hidden">Меню</span></button>
-      <ul class="menu__list wrapper">
-        <li class="menu__item">
-          <a href="#start" class="menu__link menu__link--active">В НАЧАЛО</a>
-        </li>
-        <li class="menu__item">
-          <a href="#actions" class="menu__link">АКЦИИ</a>
-        </li>
-        <li class="menu__item">
-          <a href="#company" class="menu__link">О КОМПАНИИ</a>
-        </li>
-        <li class="menu__item">
-          <a href="#contacts" class="menu__link">КОНТАКТЫ</a>
-        </li>
-      </ul>
-    </nav>
   </header>
   
   <main>
@@ -114,24 +113,6 @@
             <div class="actions__text">
               <span class="actions__btn">АКЦИЯ</span>
               <h2>Новогодняя доставка за 8 часов</h2>
-              <p>Компания «СДЭК» имеет в качестве основной палитруфирменных цветов: тёмно-зелёный, зелёный, светло-зелёный,чёрный и белый. Эти цвета основной палитры способствуют...</p>
-              <a href="#" class="actions__link">подробнее</a>
-            </div>
-          </li>
-          <li class="swiper-slide actions__slide">
-            <img src="img/img-1.jpg" alt="специальное предложение" width="570" height="500">
-            <div class="actions__text">
-              <span class="actions__btn">специальное предложение</span>
-              <h2>Уникальные условия поставщикам чего-то</h2>
-              <p>Компания «СДЭК» имеет в качестве основной палитруфирменных цветов: тёмно-зелёный, зелёный, светло-зелёный,чёрный и белый. Эти цвета основной палитры способствуют...</p>
-              <a href="#" class="actions__link">подробнее</a>
-            </div>
-          </li>
-          <li class="swiper-slide actions__slide">
-            <img src="img/img-2.jpg" alt="АКЦИЯ" width="570" height="500">
-            <div class="actions__text">
-              <span class="actions__btn">АКЦИЯ</span>
-              <h2>Скидка 20% для онлайн магазинов</h2>
               <p>Компания «СДЭК» имеет в качестве основной палитруфирменных цветов: тёмно-зелёный, зелёный, светло-зелёный,чёрный и белый. Эти цвета основной палитры способствуют...</p>
               <a href="#" class="actions__link">подробнее</a>
             </div>
@@ -321,8 +302,9 @@
 <!-- Slider -->
   <script>
   var swiper = new Swiper('.swiper-container', {
-    slidesPerView: 3,
+    slidesPerView: 'auto',
     spaceBetween: 30,
+    loop: true,
     pagination: {
       el: '.swiper-pagination',
       clickable: true,

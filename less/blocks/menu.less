@@ -1,4 +1,9 @@
-.menu {
+.menu__wrap {
+  display: none;
+  position: absolute;
+  top: 70px;
+  left: 0;
+  right: 0;
   background-color: #1d1d1b;
 }
 
@@ -25,5 +30,23 @@
 }
 
 .menu__btn {
-  display: none;
+  height: 65px;
+  background-color: transparent;
+  padding-left: 30px;
+  font-size: 12px;
+  font-weight: 700;
+  color: #1d1d1b;
+  letter-spacing: 1px;
+  opacity: 0.5;
+  text-transform: uppercase;
+  
+  &:hover,
+  &:active {
+    opacity: 1;
+    transition: ease-out 0.3s;
+  }
+}
+
+.menu:hover .menu__wrap {
+  display: block;
 }

@@ -11,14 +11,10 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 0 10px 0;
+  padding-top: 5px;
 }
 
 .header__link {
-  margin-right: auto;
-}
-
-.header__link a {
   padding-left: 35px;
   font-size: 12px;
   font-weight: 700;
@@ -26,22 +22,21 @@
   letter-spacing: 1px;
   opacity: 0.5;
   text-transform: uppercase;
-  
-  &:last-child {
-    margin-left: 42px;
-    position: relative;
-    
-    &::before {
-      content: "";
-      position: absolute;
-      top: -2px;
-      left: 0;
-      width: 12px;
-      height: 16px;
-      background-position: -635px -5px;
-      background-image: url(../img/sprite.png);
-      background-repeat: no-repeat;
-    }
+  transition: ease-out 0.3s;
+  margin-left: 42px;
+  margin-right: auto;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: 0;
+    width: 12px;
+    height: 16px;
+    background-position: -635px -5px;
+    background-image: url(../img/sprite.png);
+    background-repeat: no-repeat;
   }
 }
 

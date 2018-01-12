@@ -51,6 +51,11 @@
     .survey__wrap {
       padding-left: 130px;
       padding-right: 130px;
+      
+      &::before,
+      &::after {
+        left: 200px;
+      }
     }
   }
 }
@@ -97,7 +102,7 @@
     content: "";
     position: absolute;
     top: 50%;
-    left: 100px;
+    left: 75px;
     transform: translate(-50%, -50%);
     width: 500px;
     height: 500px;
