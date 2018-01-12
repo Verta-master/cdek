@@ -449,15 +449,17 @@ h2 {
   font-size: 48px;
   font-weight: 700;
   line-height: 1.2;
-  padding-bottom: 10px;
-  margin-bottom: 0;
+  letter-spacing: 2px;
+  padding-bottom: 15px;
+  margin-bottom: 20px;
 }
 h2 span {
   display: inline-block;
-  padding: 7px 7px;
+  padding: 5px 5px 0 5px;
   color: #fff;
-  -webkit-transform: skewX(-10deg);
-          transform: skewX(-10deg);
+  line-height: 1;
+  -webkit-transform: skewX(-8deg);
+          transform: skewX(-8deg);
   background-color: #008237;
   background-image: -webkit-gradient(linear, left bottom, left top, from(#006b2d), to(#008237));
   background-image: linear-gradient(to top, #006b2d 0%, #008237 100%);
@@ -487,21 +489,22 @@ h2 span {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 10px 0;
+  padding: 15px 0 10px 0;
 }
 .header__link {
   margin-right: auto;
 }
 .header__link a {
-  padding-left: 30px;
+  padding-left: 35px;
   font-size: 12px;
   font-weight: 700;
   color: #1d1d1b;
+  letter-spacing: 1px;
   opacity: 0.5;
   text-transform: uppercase;
 }
 .header__link a:last-child {
-  margin-left: 50px;
+  margin-left: 42px;
   position: relative;
 }
 .header__link a:last-child::before {
@@ -530,6 +533,7 @@ h2 span {
   padding-left: 37px;
   font-size: 18px;
   color: #1d1d1b;
+  letter-spacing: 1px;
   font-weight: 700;
   position: relative;
 }
@@ -566,6 +570,7 @@ h2 span {
   width: 144px;
   min-height: 46px;
   padding-right: 32px;
+  letter-spacing: 1px;
 }
 .header__enter span {
   opacity: 0.3;
@@ -607,6 +612,7 @@ h2 span {
   color: #fff;
   font-size: 12px;
   font-weight: 700;
+  letter-spacing: 1px;
   text-transform: uppercase;
   border-radius: 30px;
   position: relative;
@@ -662,18 +668,18 @@ h2 span {
   position: relative;
 }
 .promo__title {
-  max-width: 490px;
+  max-width: 500px;
   padding-left: 30px;
-  padding-top: 300px;
-  margin-bottom: 250px;
+  padding-top: 325px;
+  margin-bottom: 265px;
 }
 .promo__title h1 {
   font-size: 48px;
   font-weight: 700;
   line-height: 1.2;
   color: #1d1d1b;
-  letter-spacing: 1px;
-  padding-bottom: 10px;
+  letter-spacing: 2px;
+  padding-bottom: 12px;
   margin-bottom: 0;
   position: relative;
 }
@@ -698,12 +704,14 @@ h2 span {
   background-color: #008237;
 }
 .promo__title p {
-  max-width: 400px;
+  max-width: 450px;
+  margin-top: 20px;
+  letter-spacing: 1px;
 }
 .promo__img {
   position: absolute;
-  top: 0;
-  right: -200px;
+  top: 70px;
+  right: -175px;
   width: 900px;
   z-index: -1;
   height: 900px;
@@ -720,11 +728,14 @@ h2 span {
   background-color: #e6f3eb;
   border: 100px solid #f2f9f5;
 }
+.promo__img img {
+  margin-top: -50px;
+}
 .calc {
   width: 100%;
   min-height: 80px;
   padding: 10px;
-  margin-bottom: 215px;
+  margin-bottom: 217px;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -735,6 +746,7 @@ h2 span {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  letter-spacing: 1px;
   border-radius: 40px;
   background-color: #ffffff;
   -webkit-box-shadow: 0px 16px 39.56px 3.44px rgba(35, 38, 50, 0.1);
@@ -743,10 +755,10 @@ h2 span {
 .calc__cloud {
   position: absolute;
   left: 0;
-  top: -150%;
+  top: -159%;
   max-width: 302px;
   margin: 0;
-  padding: 30px;
+  padding: 27px;
   border-radius: 30px;
   background-color: #008237;
   background-image: -webkit-gradient(linear, left bottom, left top, from(#139324), to(#00902a));
@@ -761,10 +773,10 @@ h2 span {
 .calc__cloud::after {
   content: "";
   position: absolute;
-  bottom: -5px;
-  left: 30px;
-  width: 13px;
-  height: 13px;
+  bottom: -7px;
+  left: 32px;
+  width: 15px;
+  height: 15px;
   background-color: #129324;
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
@@ -837,7 +849,7 @@ h2 span {
 }
 .calc__label {
   position: absolute;
-  top: 25px;
+  top: 20px;
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
@@ -1438,7 +1450,7 @@ button.swiper-pagination-bullet {
   -ms-perspective: 1200px;
 }
 .actions {
-  margin-bottom: 190px;
+  margin-bottom: 215px;
   position: relative;
 }
 .actions__slider {
@@ -1451,8 +1463,8 @@ button.swiper-pagination-bullet {
 }
 .actions__text {
   position: absolute;
-  bottom: 25px;
-  left: 30px;
+  bottom: 35px;
+  left: 35px;
   color: #fff;
 }
 .actions__text h2 {
@@ -1461,8 +1473,8 @@ button.swiper-pagination-bullet {
   font-weight: 700;
   letter-spacing: 1px;
   padding-bottom: 0;
-  margin-bottom: 25px;
-  margin-top: 15px;
+  margin-bottom: 15px;
+  margin-top: 27px;
   max-width: 370px;
   color: #fff;
 }
@@ -1494,8 +1506,11 @@ button.swiper-pagination-bullet {
 }
 .actions__btn {
   min-height: 42px;
-  padding: 15px 25px;
+  padding: 15px 28px;
+  font-size: 10px;
+  font-weight: 700;
   color: #31312b;
+  letter-spacing: 1px;
   text-transform: uppercase;
   border-radius: 30px;
   background-color: #f2e500;
@@ -1514,13 +1529,13 @@ button.swiper-pagination-bullet {
       -ms-flex-align: center;
           align-items: center;
   position: static;
-  margin-top: 20px;
+  margin-top: 23px;
 }
 .swiper-pagination-bullet {
   width: 30px;
   height: 30px;
-  margin-right: 30px;
-  margin-left: 30px;
+  margin-right: 28px;
+  margin-left: 28px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1566,7 +1581,7 @@ button.swiper-pagination-bullet {
 .company {
   width: 100%;
   position: relative;
-  margin-bottom: 100px;
+  margin-bottom: 110px;
 }
 .company h2 {
   position: relative;
@@ -1591,20 +1606,24 @@ button.swiper-pagination-bullet {
   border-radius: 4px;
   background-color: #008237;
 }
+.company p {
+  line-height: 18px;
+}
 .company__figure {
   position: absolute;
-  top: 0;
-  right: 0;
+  top: 30px;
+  right: 40px;
   z-index: -1;
 }
 .company__text {
   max-width: 500px;
   padding-left: 30px;
-  margin-bottom: 130px;
+  margin-bottom: 145px;
 }
 .company__btn {
   width: 314px;
   min-height: 60px;
+  margin-top: 20px;
 }
 .company__list {
   display: -webkit-box;
@@ -1618,11 +1637,17 @@ button.swiper-pagination-bullet {
           align-items: baseline;
   font-weight: 700;
   text-align: center;
+  padding-left: 35px;
+  padding-right: 35px;
 }
 .company__item {
   max-width: 190px;
-  padding-top: 140px;
+  padding-top: 120px;
   position: relative;
+}
+.company__item p {
+  max-width: 160px;
+  line-height: 1.2;
 }
 .company__item::before {
   content: "";
@@ -1694,6 +1719,9 @@ button.swiper-pagination-bullet {
 .company__item:nth-child(3):hover::after {
   background-image: url(../img/icon-3-white.png), radial-gradient(circle, #6ba006 0%, #00902a 100%);
 }
+.company__item:nth-child(4) p {
+  max-width: 180px;
+}
 .company__item:nth-child(4)::after {
   background-image: url(../img/icon-4.png);
 }
@@ -1717,15 +1745,15 @@ button.swiper-pagination-bullet {
   min-height: 60px;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 35px;
+  margin-top: 25px;
 }
 .survey {
   color: #fff;
   background-color: #008237;
   border-top: 10px solid #f2e500;
   position: relative;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-top: 65px;
+  padding-bottom: 35px;
   overflow: hidden;
 }
 .survey::before {
@@ -1741,7 +1769,10 @@ button.swiper-pagination-bullet {
 .survey h2 {
   color: #fff;
   font-size: 40px;
+  font-weight: 700;
   position: relative;
+  margin-top: 0;
+  letter-spacing: 3px;
 }
 .survey h2::before {
   content: "";
@@ -1770,7 +1801,23 @@ button.swiper-pagination-bullet {
 .survey a:active {
   text-decoration: underline;
 }
+.survey p {
+  letter-spacing: 1px;
+}
+.survey--bottom {
+  padding-top: 70px;
+  padding-bottom: 40px;
+}
+.survey--bottom h2 {
+  font-size: 48px;
+}
+.survey--bottom .survey__wrap {
+  padding-left: 130px;
+  padding-right: 130px;
+}
 .survey__wrap {
+  padding-left: 30px;
+  padding-right: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1830,6 +1877,7 @@ button.swiper-pagination-bullet {
 .survey__link {
   width: 351px;
   height: 80px;
+  margin-top: -10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1839,10 +1887,11 @@ button.swiper-pagination-bullet {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-left: 20px;
+  padding-left: 40px;
   color: #fff;
   font-size: 16px;
   font-weight: 700;
+  letter-spacing: 2px;
   text-transform: uppercase;
   border-radius: 40px;
   background-color: rgba(242, 229, 0, 0.3);
@@ -1871,10 +1920,14 @@ button.swiper-pagination-bullet {
   background-image: url(../img/icon-faq.png);
 }
 .brands {
-  padding-top: 80px;
+  padding-top: 55px;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 .brands h2 {
   position: relative;
+  letter-spacing: 3px;
+  padding-bottom: 5px;
 }
 .brands h2::before {
   content: "";
@@ -1897,6 +1950,9 @@ button.swiper-pagination-bullet {
   background-color: #008237;
 }
 .brands__list {
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1913,25 +1969,31 @@ button.swiper-pagination-bullet {
 }
 .brands__list li {
   width: 16.6%;
+  margin-bottom: 15px;
 }
 .footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   padding-top: 15px;
   padding-bottom: 10px;
+  padding-right: 30px;
 }
 .footer p {
   color: #1d1d1b;
   font-size: 13px;
   font-weight: 700;
+  letter-spacing: 1px;
   opacity: 0.3;
+}
+.footer p:first-of-type {
+  margin-right: 50px;
 }
 .footer p a {
   color: #1d1d1b;
@@ -1940,8 +2002,11 @@ button.swiper-pagination-bullet {
 .footer p a:active {
   text-decoration: underline;
 }
+.footer .logo {
+  margin-right: 35px;
+}
 .contacts {
-  padding-top: 180px;
+  padding-top: 150px;
   padding-bottom: 210px;
   background-image: url(../img/map-markers.png);
   background-repeat: no-repeat;
@@ -1995,47 +2060,8 @@ button.swiper-pagination-bullet {
   width: 283px;
   height: 60px;
 }
-.logo__info {
-  padding-left: 57px;
-  font-family: "Museo Sans", "Arial", sans-serif;
-  color: #a6a6a6;
-  position: relative;
-  -webkit-transition: ease-out 0.3s;
-  transition: ease-out 0.3s;
-}
-.logo__info::before {
-  content: "";
-  position: absolute;
-  top: -12px;
-  left: -2px;
-  width: 38px;
-  height: 51px;
-  background-image: url(../img/logo-laylay.png);
-  background-repeat: no-repeat;
-  -webkit-transition: ease-out 0.3s;
-  transition: ease-out 0.3s;
-}
-.logo__info::after {
-  content: "";
-  position: absolute;
-  top: 5px;
-  left: 45px;
-  width: 1px;
-  height: 28px;
-  background-color: #d6d6d6;
-  -webkit-transition: ease-out 0.3s;
-  transition: ease-out 0.3s;
-}
-.logo__title {
-  margin: 0;
-  margin-top: -5px;
-  font-size: 15px;
-  font-weight: 700;
-}
-.logo__text {
-  margin: 0;
-  font-size: 9px;
-  font-weight: 500;
+.logo__link {
+  margin-left: auto;
 }
 .arcticmodal-overlay,
 .arcticmodal-container {
@@ -2093,6 +2119,7 @@ button.swiper-pagination-bullet {
 }
 .modal h2 {
   margin-bottom: 10px;
+  padding-left: 15px;
   font-size: 30px;
   font-weight: 700;
   line-height: 1.2;
@@ -2108,19 +2135,57 @@ button.swiper-pagination-bullet {
   padding-left: 15px;
   padding-right: 30px;
 }
+.modal p span {
+  color: #008237;
+}
+.modal--action {
+  width: 770px;
+  padding-top: 125px;
+  background-image: url(../img/img-modal.jpg);
+  background-repeat: no-repeat;
+  background-position: center top;
+}
+.modal--action h2 {
+  color: #fff;
+  margin-bottom: 25px;
+  padding-left: 0;
+}
+.modal--action p {
+  padding: 0;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+.modal--action .modal__btn {
+  width: 211px;
+}
+.modal ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin-bottom: 20px;
+  padding-top: 7px;
+  padding-right: 100px;
+}
+.modal ul li {
+  margin-bottom: 10px;
+}
 .modal__close {
   position: absolute;
   top: 0;
   right: 0;
-  width: 60px;
-  height: 60px;
-  border-radius: 4px 30px 4px 4px;
+  width: 55px;
+  height: 55px;
+  border-radius: 0 30px 0 4px;
   background-color: #fafafa;
   -webkit-box-shadow: inset 0px 0px 6.65px 0.35px rgba(133, 133, 133, 0.13);
           box-shadow: inset 0px 0px 6.65px 0.35px rgba(133, 133, 133, 0.13);
   background-image: url(../img/icon-close.png);
   background-repeat: no-repeat;
   background-position: center;
+}
+.modal__choice {
+  padding-top: 10px;
 }
 .modal__radio {
   display: none;
@@ -2131,8 +2196,13 @@ button.swiper-pagination-bullet {
   padding-left: 43px;
   padding-right: 35px;
   color: rgba(0, 0, 0, 0.6);
+  line-height: 18px;
+  letter-spacing: 1px;
   cursor: pointer;
   position: relative;
+}
+.modal__label:last-of-type {
+  margin-bottom: 30px;
 }
 .modal__label:hover,
 .modal__label:active {
@@ -2141,8 +2211,8 @@ button.swiper-pagination-bullet {
 .modal__label::before {
   content: "";
   position: absolute;
-  top: 3px;
-  left: 15px;
+  top: 0;
+  left: 17px;
   width: 12px;
   height: 12px;
   border-radius: 50%;
@@ -2152,8 +2222,8 @@ button.swiper-pagination-bullet {
   display: none;
   content: "";
   position: absolute;
-  top: -1px;
-  left: 11px;
+  top: -4px;
+  left: 13px;
   width: 20px;
   height: 20px;
   background-color: #008237;
@@ -2211,4 +2281,44 @@ button.swiper-pagination-bullet {
   padding: 20px 30px;
   border: none;
   outline: none;
+}
+.modal__comment {
+  font-size: 10px;
+  line-height: 14px;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.4);
+}
+.modal__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  padding-right: 25px;
+  padding-top: 15px;
+}
+.modal__price {
+  line-height: 1;
+  color: #000;
+  font-weight: 600;
+  margin: 0;
+  text-align: left;
+}
+.modal__price span {
+  display: block;
+  color: #1d1d1b !important;
+  font-size: 42px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+.modal__price span b {
+  font-size: 24px;
+  font-weight: 700;
+}
+.modal__request {
+  padding-top: 5px;
 }
