@@ -1,4 +1,11 @@
-.arcticmodal-overlay,
+.arcticmodal-overlay {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 72px;
+  bottom: 0;
+  z-index: 1000;
+}
 .arcticmodal-container { position: fixed; left: 0; top: 0; right: 0; bottom: 0; z-index: 1000; }
 .arcticmodal-container { overflow: auto; margin: 0; padding: 0; border: 0; border-collapse: collapse; }
 *:first-child+html .arcticmodal-container { height: 100% }
@@ -61,6 +68,17 @@
     
     .modal__btn {
       width: 211px;
+    }
+  }
+  
+  &--map {
+    width: 1000px;
+    height: 700px;
+    
+    iframe {
+      border: none;
+      width: 100%;
+      height: 100%;
     }
   }
   
