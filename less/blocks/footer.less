@@ -1,15 +1,21 @@
 .footer {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
   padding-top: 15px;
   padding-bottom: 10px;
+  padding-right: 30px;
   
   p {
     color: @black;
     font-size: 13px;
     font-weight: 700;
+    letter-spacing: 1px;
     opacity: 0.3;
+    
+    &:first-of-type {
+      margin-right: 50px;
+    }
     
     a {
       color: @black;
@@ -19,5 +25,9 @@
         text-decoration: underline;
       }
     }
+  }
+  
+  .logo {
+    margin-right: 35px;
   }
 }

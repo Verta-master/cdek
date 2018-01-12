@@ -3,8 +3,8 @@
   background-color: rgb(0, 130, 55);
   border-top: 10px solid rgb(242, 229, 0);
   position: relative;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-top: 65px;
+  padding-bottom: 35px;
   overflow: hidden;
   
   &::before {
@@ -21,7 +21,10 @@
   h2 {
     color: #fff;
     font-size: 40px;
+    font-weight: 700;
     .deco(@yellow);
+    margin-top: 0;
+    letter-spacing: 3px;
   }
   
   a {
@@ -32,9 +35,29 @@
       text-decoration: underline;
     }
   }
+  
+  p {
+    letter-spacing: 1px;
+  }
+  
+  &--bottom {
+    padding-top: 70px;
+    padding-bottom: 40px;
+    
+    h2 {
+      font-size: 48px;
+    }
+    
+    .survey__wrap {
+      padding-left: 130px;
+      padding-right: 130px;
+    }
+  }
 }
 
 .survey__wrap {
+  padding-left: 30px;
+  padding-right: 30px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -87,13 +110,15 @@
 .survey__link {
   width: 351px;
   height: 80px;
+  margin-top: -10px;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-left: 20px;
+  padding-left: 40px;
   color: #fff;
   font-size: 16px;
   font-weight: 700;
+  letter-spacing: 2px;
   text-transform: uppercase;
   border-radius: 40px;
   background-color: rgba(242, 229, 0, 0.3);

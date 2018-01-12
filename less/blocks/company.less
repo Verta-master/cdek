@@ -1,29 +1,34 @@
 .company {
   width: 100%;
   position: relative;
-  margin-bottom: 100px;
+  margin-bottom: 110px;
   
   h2 {
     .deco(@green);
+  }
+  
+  p {
+    line-height: 18px;
   }
 }
 
 .company__figure {
   position: absolute;
-  top: 0;
-  right: 0;
+  top: 30px;
+  right: 40px;
   z-index: -1;
 }
 
 .company__text {
   max-width: 500px;
   padding-left: 30px;
-  margin-bottom: 130px;
+  margin-bottom: 145px;
 }
 
 .company__btn {
   width: 314px;
   min-height: 60px;
+  margin-top: 20px;
 }
 
 .company__list {
@@ -32,12 +37,19 @@
   align-items: baseline;
   font-weight: 700;
   text-align: center;
+  padding-left: 35px;
+  padding-right: 35px;
 }
 
 .company__item {
   max-width: 190px;
-  padding-top: 140px;
+  padding-top: 120px;
   position: relative;
+  
+  p {
+    max-width: 160px;
+    line-height: 1.2;
+  }
   
   &::before {
     content: "";
@@ -125,6 +137,10 @@
   }
   
   &:nth-child(4) {
+    p {
+      max-width: 180px;
+    }
+    
     &::after {
       background-image: url(../img/icon-4.png);
     }
@@ -166,5 +182,5 @@
   min-height: 60px;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 35px;
+  margin-top: 25px;
 }
