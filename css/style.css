@@ -2614,6 +2614,7 @@ button.swiper-pagination-bullet {
   }
   .modal--action {
     padding-top: 80px;
+    top: 70%;
   }
   .modal__close {
     width: 40px;
