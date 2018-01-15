@@ -2146,11 +2146,7 @@ button.swiper-pagination-bullet {
   font-size: 30px;
   font-weight: 700;
   line-height: 1.2;
-  background-image: -webkit-gradient(linear, left bottom, left top, from(#6ba006), color-stop(30%, #6ba006), to(#00902a));
-  background-image: linear-gradient(to top, #6ba006 0%, #6ba006 30%, #00902a 100%);
-  color: transparent;
-  -webkit-background-clip: text;
-  background-clip: text;
+  color: #008237;
 }
 .modal p {
   font-size: 12px;
