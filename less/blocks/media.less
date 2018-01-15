@@ -312,6 +312,10 @@
   .modal--action {
     padding-top: 80px;
     top: 70%;
+    
+    h2 {
+      margin-bottom: 40px;
+    }
   }
   
   .modal__close {
@@ -328,5 +332,15 @@
     li {
       margin-right: 0;
     }
+  }
+}
+
+@media (max-width: 766px) and (orientation: landscape) {
+  .modal--action {
+    padding-top: 100px;
+  }
+  
+  .modal {
+    top: 100%;
   }
 }
