@@ -3,13 +3,13 @@
   padding: 0;
 }
 
-.deco(@color) {
+.deco(@color, @pos) {
   position: relative;
   
   &::before {
     content: "";
     position: absolute;
-    bottom: 0;
+    bottom: @pos;
     left: 0;
     width: 60px;
     height: 4px;
@@ -20,7 +20,7 @@
   &::after {
     content: "";
     position: absolute;
-    bottom: 0;
+    bottom: @pos;
     left: 65px;
     width: 4px;
     height: 4px;

@@ -97,12 +97,20 @@
 .calc__btn {
   width: 170px;
   height: 60px;
+  padding-top: 3px;
   font-size: 12px;
   font-weight: 700;
   text-transform: uppercase;
   color: #fff;
   border-radius: 30px;
   background-color: rgb(49, 49, 43);
+  transition: ease-out 0.3s;
+  
+  &:hover,
+  &:active {
+    background-color: #000;
+    transition: ease-out 0.3s;
+  }
 }
 
 .calc__field {
@@ -111,7 +119,7 @@
 
 .calc__label {
   position: absolute;
-  top: 20px;
+  top: 24px;
   left: 50%;
   transform: translateX(-50%);
   color: #000;

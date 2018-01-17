@@ -22,7 +22,7 @@
     color: #fff;
     font-size: 40px;
     font-weight: 700;
-    .deco(@yellow);
+    .deco(@yellow, 0);
     margin-top: 0;
     letter-spacing: 3px;
   }
@@ -46,6 +46,7 @@
     
     h2 {
       font-size: 48px;
+      .deco(@yellow, 2px);
     }
     
     .survey__wrap {
@@ -79,6 +80,7 @@
     border-radius: 50%;
     background-color: rgba(118, 184, 42, 0.1);
     box-shadow: 0px 16px 114px 36px rgba(35, 38, 50, 0.05);
+    z-index: 1;
   }
   
   &::after {
@@ -92,11 +94,13 @@
     border-radius: 50%;
     background-color: rgba(118, 184, 42, 0.1);
     box-shadow: 0px 16px 114px 36px rgba(35, 38, 50, 0.05);
+    z-index: 1;
   }
 }
 
 .survey__block {
   position: relative;
+  z-index: 5;
   
   &::after {
     content: "";
@@ -109,6 +113,7 @@
     border-radius: 50%;
     background-color: rgba(118, 184, 42, 0.1);
     box-shadow: 0px 16px 114px 36px rgba(35, 38, 50, 0.05);
+    z-index: -1;
   }
 }
 
@@ -116,6 +121,7 @@
   width: 351px;
   height: 80px;
   margin-top: -10px;
+  padding-top: 3px;
   display: flex;
   justify-content: center;
   align-items: center;

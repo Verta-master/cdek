@@ -9,9 +9,18 @@
   text-transform: uppercase;
   border-radius: 30px;
   position: relative;
+  padding-top: 4px;
   box-shadow: 0px 3px 11.57px 1.43px rgba(35, 38, 50, 0.08);
-  background-color: @green;
+  background-color: rgb(0,144,42);
   background-image: linear-gradient(to top, rgb(107,160,6) 0%, rgb(0,144,42) 100%);
+  background-size: 100% 100%;
+  transition: ease-out 0.3s;
+  
+  &:hover,
+  &:active {
+    background-size: 100% 200%;
+    transition: ease-out 0.3s;
+  }
   
   &--grey {
     color: #1d1d1b;
@@ -22,6 +31,13 @@
   &--light {
     color: @green;
     background-color: rgba(0,107,45,0.1);
+    transition: ease-out 0.3s;
     background-image: linear-gradient(to top, rgba(0,107,45,0.1) 0%, rgba(0,130,55,0.1) 100%);
+    
+    &:hover,
+    &:active {
+      background-color: rgba(0,107,45,0.3);
+      transition: ease-out 0.3s;
+    }
   }
 }
