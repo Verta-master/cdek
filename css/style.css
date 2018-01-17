@@ -469,6 +469,10 @@ h2 span {
   z-index: 10;
   background-color: #fff;
 }
+.header--shadow {
+  -webkit-box-shadow: 0px 16px 39.56px 3.44px rgba(35, 38, 50, 0.1);
+          box-shadow: 0px 16px 39.56px 3.44px rgba(35, 38, 50, 0.1);
+}
 .header__top {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -540,6 +544,7 @@ h2 span {
   margin-left: 33px;
   margin-right: 28px;
   padding-left: 35px;
+  margin-bottom: 5px;
   width: 227px;
   height: 46px;
 }
@@ -557,6 +562,7 @@ h2 span {
 .header__enter {
   width: 144px;
   height: 46px;
+  margin-bottom: 5px;
   padding-right: 32px;
   letter-spacing: 1px;
 }
@@ -604,11 +610,21 @@ h2 span {
   text-transform: uppercase;
   border-radius: 30px;
   position: relative;
+  padding-top: 4px;
   -webkit-box-shadow: 0px 3px 11.57px 1.43px rgba(35, 38, 50, 0.08);
           box-shadow: 0px 3px 11.57px 1.43px rgba(35, 38, 50, 0.08);
-  background-color: #008237;
+  background-color: #00902a;
   background-image: -webkit-gradient(linear, left bottom, left top, from(#6ba006), to(#00902a));
   background-image: linear-gradient(to top, #6ba006 0%, #00902a 100%);
+  background-size: 100% 100%;
+  -webkit-transition: ease-out 0.3s;
+  transition: ease-out 0.3s;
+}
+.btn:hover,
+.btn:active {
+  background-size: 100% 200%;
+  -webkit-transition: ease-out 0.3s;
+  transition: ease-out 0.3s;
 }
 .btn--grey {
   color: #1d1d1b;
@@ -618,16 +634,70 @@ h2 span {
 .btn--light {
   color: #008237;
   background-color: rgba(0, 107, 45, 0.1);
+  -webkit-transition: ease-out 0.3s;
+  transition: ease-out 0.3s;
   background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 107, 45, 0.1)), to(rgba(0, 130, 55, 0.1)));
   background-image: linear-gradient(to top, rgba(0, 107, 45, 0.1) 0%, rgba(0, 130, 55, 0.1) 100%);
 }
+.btn--light:hover,
+.btn--light:active {
+  background-color: rgba(0, 107, 45, 0.3);
+  -webkit-transition: ease-out 0.3s;
+  transition: ease-out 0.3s;
+}
+@-webkit-keyframes fadeOutUp {
+  0% {
+    opacity: 1;
+    -webkit-transform: translateY(170px);
+            transform: translateY(170px);
+  }
+  30% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+@keyframes fadeOutUp {
+  0% {
+    opacity: 1;
+    -webkit-transform: translateY(170px);
+            transform: translateY(170px);
+  }
+  30% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: none;
+            transform: none;
+  }
+}
 .menu__wrap {
-  display: none;
   position: absolute;
-  top: 70px;
   left: 0;
   right: 0;
   background-color: #1d1d1b;
+  z-index: 15;
+  opacity: 0;
+  top: -100px;
+  -webkit-animation-name: fadeOutUp;
+          animation-name: fadeOutUp;
+  -webkit-animation-duration: 0.6s;
+          animation-duration: 0.6s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+.menu__overlay {
+  display: none;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 70px;
+  bottom: 0;
+  background-color: rgba(29, 29, 27, 0.8);
   z-index: 15;
 }
 .menu__list {
@@ -649,6 +719,8 @@ h2 span {
 }
 .menu__link {
   color: #fff;
+  font-size: 12px;
+  font-weight: 700;
 }
 .menu__link:hover,
 .menu__link:active,
@@ -672,8 +744,43 @@ h2 span {
   -webkit-transition: ease-out 0.3s;
   transition: ease-out 0.3s;
 }
+@-webkit-keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: none;
+            transform: none;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(170px);
+            transform: translateY(170px);
+  }
+}
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: none;
+            transform: none;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(170px);
+            transform: translateY(170px);
+  }
+}
 .menu:hover .menu__wrap {
-  display: block;
+  -webkit-animation-name: fadeInDown;
+          animation-name: fadeInDown;
+  -webkit-animation-duration: 0.6s;
+          animation-duration: 0.6s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
 }
 .promo {
   position: relative;
@@ -848,19 +955,28 @@ h2 span {
 .calc__btn {
   width: 170px;
   height: 60px;
+  padding-top: 3px;
   font-size: 12px;
   font-weight: 700;
   text-transform: uppercase;
   color: #fff;
   border-radius: 30px;
   background-color: #31312b;
+  -webkit-transition: ease-out 0.3s;
+  transition: ease-out 0.3s;
+}
+.calc__btn:hover,
+.calc__btn:active {
+  background-color: #000;
+  -webkit-transition: ease-out 0.3s;
+  transition: ease-out 0.3s;
 }
 .calc__field {
   position: relative;
 }
 .calc__label {
   position: absolute;
-  top: 20px;
+  top: 24px;
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
@@ -1507,6 +1623,7 @@ button.swiper-pagination-bullet {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  font-size: 12px;
   color: rgba(0, 0, 0, 0.3);
   font-weight: 700;
   text-transform: uppercase;
@@ -1601,7 +1718,7 @@ button.swiper-pagination-bullet {
 .company h2::before {
   content: "";
   position: absolute;
-  bottom: 0;
+  bottom: 3px;
   left: 0;
   width: 60px;
   height: 4px;
@@ -1611,7 +1728,7 @@ button.swiper-pagination-bullet {
 .company h2::after {
   content: "";
   position: absolute;
-  bottom: 0;
+  bottom: 3px;
   left: 65px;
   width: 4px;
   height: 4px;
@@ -1822,6 +1939,27 @@ button.swiper-pagination-bullet {
 }
 .survey--bottom h2 {
   font-size: 48px;
+  position: relative;
+}
+.survey--bottom h2::before {
+  content: "";
+  position: absolute;
+  bottom: 2px;
+  left: 0;
+  width: 60px;
+  height: 4px;
+  border-radius: 4px;
+  background-color: #f2e500;
+}
+.survey--bottom h2::after {
+  content: "";
+  position: absolute;
+  bottom: 2px;
+  left: 65px;
+  width: 4px;
+  height: 4px;
+  border-radius: 4px;
+  background-color: #f2e500;
 }
 .survey--bottom .survey__wrap {
   padding-left: 130px;
@@ -1858,6 +1996,7 @@ button.swiper-pagination-bullet {
   background-color: rgba(118, 184, 42, 0.1);
   -webkit-box-shadow: 0px 16px 114px 36px rgba(35, 38, 50, 0.05);
           box-shadow: 0px 16px 114px 36px rgba(35, 38, 50, 0.05);
+  z-index: 1;
 }
 .survey__wrap::after {
   content: "";
@@ -1872,9 +2011,11 @@ button.swiper-pagination-bullet {
   background-color: rgba(118, 184, 42, 0.1);
   -webkit-box-shadow: 0px 16px 114px 36px rgba(35, 38, 50, 0.05);
           box-shadow: 0px 16px 114px 36px rgba(35, 38, 50, 0.05);
+  z-index: 1;
 }
 .survey__block {
   position: relative;
+  z-index: 5;
 }
 .survey__block::after {
   content: "";
@@ -1889,11 +2030,13 @@ button.swiper-pagination-bullet {
   background-color: rgba(118, 184, 42, 0.1);
   -webkit-box-shadow: 0px 16px 114px 36px rgba(35, 38, 50, 0.05);
           box-shadow: 0px 16px 114px 36px rgba(35, 38, 50, 0.05);
+  z-index: -1;
 }
 .survey__link {
   width: 351px;
   height: 80px;
   margin-top: -10px;
+  padding-top: 3px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1948,7 +2091,7 @@ button.swiper-pagination-bullet {
 .brands h2::before {
   content: "";
   position: absolute;
-  bottom: 0;
+  bottom: -6px;
   left: 0;
   width: 60px;
   height: 4px;
@@ -1958,7 +2101,7 @@ button.swiper-pagination-bullet {
 .brands h2::after {
   content: "";
   position: absolute;
-  bottom: 0;
+  bottom: -6px;
   left: 65px;
   width: 4px;
   height: 4px;
@@ -2035,7 +2178,7 @@ button.swiper-pagination-bullet {
 .contacts h2::before {
   content: "";
   position: absolute;
-  bottom: 0;
+  bottom: 3px;
   left: 0;
   width: 60px;
   height: 4px;
@@ -2045,7 +2188,7 @@ button.swiper-pagination-bullet {
 .contacts h2::after {
   content: "";
   position: absolute;
-  bottom: 0;
+  bottom: 3px;
   left: 65px;
   width: 4px;
   height: 4px;
@@ -2272,6 +2415,8 @@ button.swiper-pagination-bullet {
 .modal__message {
   display: block;
   width: 100%;
+  min-width: 100%;
+  max-width: 100%;
   margin-bottom: 15px;
   color: #000;
   border-radius: 30px;
@@ -2306,6 +2451,8 @@ button.swiper-pagination-bullet {
 }
 .modal__message {
   height: 102px;
+  max-height: 102px;
+  min-height: 102px;
   padding: 20px 30px;
   border: none;
   outline: none;
@@ -2358,6 +2505,9 @@ button.swiper-pagination-bullet {
     right: 0;
     width: 800px;
     height: auto;
+  }
+  .contacts {
+    background-position: right -250px bottom;
   }
 }
 @media (max-width: 1230px) {
@@ -2424,6 +2574,9 @@ button.swiper-pagination-bullet {
   }
   .menu--opened .menu__wrap {
     display: block;
+  }
+  .contacts {
+    background-position: right -430px bottom;
   }
 }
 @media (max-width: 1023px) {

@@ -2,8 +2,8 @@
 var navMain = document.querySelector(".menu");
 var navToggle = document.querySelector(".menu__btn");
 
-navToggle.addEventListener("click", function() {
-  event.preventDefault();
+navToggle.addEventListener("click", function(evt) {
+  evt.preventDefault();
   if (navMain.classList.contains("menu--closed")) {
     navMain.classList.remove("menu--closed");
     navMain.classList.add("menu--opened");
@@ -41,6 +41,11 @@ $(document).ready(function () {
 
 function onScroll(event){
     var scrollPos = $(document).scrollTop() + 150;
+    if (scrollPos > 150) {
+      $('.header').addClass('header--shadow');
+    } else {
+      $('.header').removeClass('header--shadow');
+    }
     $('.menu__item a').each(function () {
         event.preventDefault();
         var currLink = $(this);
