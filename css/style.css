@@ -645,60 +645,24 @@ h2 span {
   -webkit-transition: ease-out 0.3s;
   transition: ease-out 0.3s;
 }
-@-webkit-keyframes fadeOutUp {
-  0% {
-    opacity: 1;
-    -webkit-transform: translateY(170px);
-            transform: translateY(170px);
-  }
-  30% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 0;
-    -webkit-transform: none;
-            transform: none;
-  }
-}
-@keyframes fadeOutUp {
-  0% {
-    opacity: 1;
-    -webkit-transform: translateY(170px);
-            transform: translateY(170px);
-  }
-  30% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 0;
-    -webkit-transform: none;
-            transform: none;
-  }
-}
 .menu__wrap {
   position: absolute;
   left: 0;
   right: 0;
   background-color: #1d1d1b;
   z-index: 15;
-  opacity: 0;
-  top: -100px;
-  -webkit-animation-name: fadeOutUp;
-          animation-name: fadeOutUp;
-  -webkit-animation-duration: 0.6s;
-          animation-duration: 0.6s;
-  -webkit-animation-fill-mode: both;
-          animation-fill-mode: both;
-}
-.menu__overlay {
   display: none;
+}
+.menu__wrap::after {
+  content: "";
   position: fixed;
   left: 0;
   right: 0;
   top: 70px;
   bottom: 0;
-  background-color: rgba(29, 29, 27, 0.8);
-  z-index: 15;
+  background-color: #1d1d1b;
+  z-index: -1;
+  opacity: 0.8;
 }
 .menu__list {
   height: 70px;
@@ -744,43 +708,8 @@ h2 span {
   -webkit-transition: ease-out 0.3s;
   transition: ease-out 0.3s;
 }
-@-webkit-keyframes fadeInDown {
-  0% {
-    opacity: 0;
-    -webkit-transform: none;
-            transform: none;
-  }
-  50% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-    -webkit-transform: translateY(170px);
-            transform: translateY(170px);
-  }
-}
-@keyframes fadeInDown {
-  0% {
-    opacity: 0;
-    -webkit-transform: none;
-            transform: none;
-  }
-  50% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-    -webkit-transform: translateY(170px);
-            transform: translateY(170px);
-  }
-}
-.menu:hover .menu__wrap {
-  -webkit-animation-name: fadeInDown;
-          animation-name: fadeInDown;
-  -webkit-animation-duration: 0.6s;
-          animation-duration: 0.6s;
-  -webkit-animation-fill-mode: both;
-          animation-fill-mode: both;
+.menu--opened .menu__wrap {
+  display: block;
 }
 .promo {
   position: relative;
@@ -2571,9 +2500,6 @@ button.swiper-pagination-bullet {
   .modal--map {
     width: 770px;
     height: 500px;
-  }
-  .menu--opened .menu__wrap {
-    display: block;
   }
   .contacts {
     background-position: right -430px bottom;
