@@ -1,21 +1,19 @@
 //Mobile menu
-var navMain = document.querySelector(".menu");
-var navToggle = document.querySelector(".menu__btn");
-
-//navToggle.addEventListener("click", function(evt) {
-//  evt.preventDefault();
-//  if (navMain.classList.contains("menu--closed")) {
-//    navMain.classList.remove("menu--closed");
-//    navMain.classList.add("menu--opened");
-//  } else {
-//    navMain.classList.add("menu--closed");
-//    navMain.classList.remove("menu--opened");
-//  }
-//});
-
 $('.menu__btn').click(function() {
   $(this).next().slideToggle();
-  $('.menu__wrap::after', $(this)).slideToggle(1000);
+});
+$('.menu__link').click(function() {
+  $('.menu__wrap').slideUp();
+  $('.menu__btn').html('НАВИГАЦИЯ');
+});
+
+var navToggle = document.querySelector('.menu__btn');
+navToggle.addEventListener('click', function() {
+  if (navToggle.innerHTML == 'НАВИГАЦИЯ') {
+    navToggle.innerHTML = 'Закрыть';
+  } else {
+    navToggle.innerHTML = 'НАВИГАЦИЯ';
+  }
 });
 
 //Scroll to menu anchor
@@ -47,9 +45,15 @@ $(document).ready(function () {
 function onScroll(event){
     var scrollPos = $(document).scrollTop() + 150;
     if (scrollPos > 150) {
-      $('.header').addClass('header--shadow');
+      $(".header").css({
+        'box-shadow': '0px 16px 39.56px 3.44px rgba(35, 38, 50, 0.1)',
+        'transition': 'box-shadow 0.5s ease'
+      });
     } else {
-      $('.header').removeClass('header--shadow');
+      $(".header").css({
+        'box-shadow': 'none',
+        'transition': 'box-shadow 0.5s ease'
+      });
     }
     $('.menu__item a').each(function () {
         event.preventDefault();
