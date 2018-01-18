@@ -1533,7 +1533,7 @@ button.swiper-pagination-bullet {
   margin-bottom: 25px;
   max-width: 450px;
 }
-.actions__text a {
+.actions__link {
   width: 153px;
   height: 46px;
   display: -webkit-box;
@@ -2132,13 +2132,13 @@ button.swiper-pagination-bullet {
       -ms-flex-align: center;
           align-items: center;
 }
-.contacts__wrap a:first-child {
-  margin-right: 30px;
-  width: 276px;
+.contacts__wrap a {
+  width: 283px;
   height: 60px;
 }
-.contacts__wrap a:nth-child(2) {
-  width: 283px;
+.contacts__map {
+  margin-right: 30px;
+  width: 276px;
   height: 60px;
 }
 .logo__link {
@@ -2507,9 +2507,6 @@ button.swiper-pagination-bullet {
   .company__item {
     max-width: 16%;
   }
-  .arcticmodal-overlay {
-    top: 120px;
-  }
   .modal--map {
     width: 770px;
     height: 500px;
@@ -2721,7 +2718,7 @@ button.swiper-pagination-bullet {
   .contacts__wrap {
     display: block;
   }
-  .contacts__wrap a:first-child {
+  .contacts__map {
     margin-bottom: 10px;
   }
   .logo__link {
