@@ -658,7 +658,7 @@ h2 span {
   bottom: 0;
   background-color: #1d1d1b;
   z-index: -1;
-  opacity: 0.8;
+  opacity: 0.95;
 }
 .menu__list {
   height: 70px;
@@ -706,6 +706,7 @@ h2 span {
 }
 .promo {
   position: relative;
+  overflow-x: hidden;
 }
 .promo__title {
   max-width: 500px;
@@ -2642,12 +2643,17 @@ button.swiper-pagination-bullet {
   .promo__title {
     padding-top: 150px;
     margin-bottom: 450px;
+    padding-left: 0;
   }
   .promo__title h1 {
     font-size: 42px;
   }
+  .calc__wrap,
   .calc {
     width: 100%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
   .calc__input--height,
   .calc__input--width,
@@ -2660,7 +2666,24 @@ button.swiper-pagination-bullet {
     margin-bottom: 10px;
   }
   .calc__cloud {
-    top: -40%;
+    top: -38%;
+    width: 100%;
+    max-width: none;
+    font-size: 18px;
+  }
+  .calc__icon {
+    display: none;
+  }
+  .calc__field,
+  #from,
+  #to {
+    width: 100%;
+  }
+  .calc__field--weight {
+    width: 80px;
+  }
+  .calc__field--size {
+    width: 70px;
   }
   .survey h2,
   h2 {
@@ -2668,7 +2691,7 @@ button.swiper-pagination-bullet {
     font-size: 30px;
   }
   .actions__text {
-    bottom: 15px;
+    bottom: 25px;
     left: 10px;
   }
   .actions__text p {
@@ -2729,6 +2752,7 @@ button.swiper-pagination-bullet {
   }
   .modal {
     width: 90%;
+    max-width: 90vw;
     padding: 20px;
   }
   .modal ul {

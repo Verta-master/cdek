@@ -65,22 +65,22 @@
           <label for="to" class="calc__label calc__label--left">Куда?</label>
         </div>
         <div class="calc__wrap">
-          <div class="calc__field">
+          <div class="calc__field calc__field--size">
             <input type="text" name="height" id="height" class="calc__input calc__input--height">
             <label for="height" class="calc__label">Высота<span>(см)</span></label>
           </div>
           <span class="calc__divider">X</span>
-          <div class="calc__field">
+          <div class="calc__field calc__field--size">
             <input type="text" name="width" id="width" class="calc__input calc__input--width">
             <label for="width" class="calc__label">Ширина<span>(см)</span></label>
           </div>
           <span class="calc__divider">X</span>
-          <div class="calc__field">
+          <div class="calc__field calc__field--size">
             <input type="text" name="depth" id="depth" class="calc__input calc__input--depth">
             <label for="depth" class="calc__label">Глубина<span>(см)</span></label>
           </div>
         </div>
-        <div class="calc__field">
+        <div class="calc__field calc__field--weight">
           <input type="text" name="weight" id="weight" class="calc__input calc__input--round calc__input--weight">
           <label for="weight" class="calc__label">Вес<span>(кг)</span></label>
         </div>
@@ -333,7 +333,7 @@
     });
     $(".modal__call").click(function(){
       $(function(){
-        $(".modal--call").arcticmodal({
+        $(".modal--request").arcticmodal({
           overlay: {
           css: {
             backgroundColor: "#000",
