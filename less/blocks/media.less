@@ -257,14 +257,17 @@
   .promo__title {
     padding-top: 150px;
     margin-bottom: 450px;
+    padding-left: 0;
   }
   
   .promo__title h1 {
     font-size: 42px;
   }
   
+  .calc__wrap,
   .calc {
     width: 100%;
+    justify-content: space-between;
   }
   
   .calc__input--height,
@@ -280,7 +283,28 @@
   }
   
   .calc__cloud {
-    top: -40%;
+    top: -38%;
+    width: 100%;
+    max-width: none;
+    font-size: 18px;
+  }
+  
+  .calc__icon {
+    display: none;
+  }
+
+  .calc__field,
+  #from,
+  #to {
+    width: 100%;
+  }
+  
+  .calc__field--weight {
+    width: 80px;
+  }
+  
+  .calc__field--size {
+    width: 70px;
   }
   
   .survey h2,
@@ -290,7 +314,7 @@
   }
   
   .actions__text {
-    bottom: 15px;
+    bottom: 25px;
     left: 10px;
     
     p {
@@ -368,6 +392,7 @@
   
   .modal {
     width: 90%;
+    max-width: 90vw;
     padding: 20px;
     
     ul {
