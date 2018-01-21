@@ -1,10 +1,12 @@
 //Mobile menu
 $('.menu__btn').click(function() {
   $(this).next().slideToggle();
+  $('.menu').toggleClass('menu--closed');
 });
 $('.menu__link').click(function() {
   $('.menu__wrap').slideUp();
   $('.menu__btn').html('НАВИГАЦИЯ');
+  $('.menu').addClass('menu--closed');
 });
 
 var navToggle = document.querySelector('.menu__btn');
@@ -36,7 +38,6 @@ $(document).ready(function () {
         $('html, body').stop().animate({
             'scrollTop': $target.offset().top - 150
         }, 500, 'swing', function () {
-//            window.location.hash = target;
             $(document).on("scroll", onScroll);
         });
     });
