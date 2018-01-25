@@ -522,7 +522,7 @@ h2 span {
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 10;
+  z-index: 2000;
   background-color: #fff;
 }
 .header__top {
@@ -2250,11 +2250,7 @@ button.swiper-pagination-bullet {
   background: #000 url(loading.gif) no-repeat 50% 50%;
 }
 .modal {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  position: relative;
   width: 430px;
   padding: 30px;
   border-radius: 30px;
@@ -2520,6 +2516,7 @@ button.swiper-pagination-bullet {
     width: 30px;
     font-size: 0;
     padding: 0;
+    padding-bottom: 7px;
     background-image: url(../img/icon-menu-cross.svg);
     background-size: 24px 24px;
     background-position: center;
@@ -2623,7 +2620,7 @@ button.swiper-pagination-bullet {
   }
   .modal--map,
   .modal--action {
-    width: 90%;
+    width: 90vw;
   }
   .contacts {
     background-image: none;
@@ -2667,6 +2664,7 @@ button.swiper-pagination-bullet {
   }
   .header {
     max-width: 100vw;
+    min-height: 70px;
   }
   .header__phone {
     font-size: 14px;
@@ -2692,11 +2690,16 @@ button.swiper-pagination-bullet {
     font-size: 20px;
     line-height: 1.5;
   }
+  .promo {
+    max-width: 100vw;
+  }
   .promo__img {
     width: 500px;
     height: 500px;
-    right: 0;
-    left: 0;
+    left: 50%;
+    right: auto;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
     top: 500px;
     border-width: 50px;
   }
@@ -2724,6 +2727,8 @@ button.swiper-pagination-bullet {
   }
   .calc__btn {
     margin-bottom: 10px;
+    width: 155px;
+    margin-left: 5px;
   }
   .calc__cloud {
     top: -38%;
@@ -2743,7 +2748,19 @@ button.swiper-pagination-bullet {
     width: 80px;
   }
   .calc__field--size {
-    width: 70px;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+  }
+  .calc__divider {
+    display: block;
+    padding: 0 5px;
+  }
+  .calc__input--weight,
+  .calc__input--depth,
+  .calc__input--height,
+  .calc__input--width {
+    width: 100%;
   }
   .survey h2,
   h2 {
@@ -2811,9 +2828,15 @@ button.swiper-pagination-bullet {
     margin-left: 0;
   }
   .modal {
-    width: 90%;
-    max-width: 90vw;
+    width: 80vw;
+    max-width: 80vw;
     padding: 20px;
+    position: absolute;
+    top: 80px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    z-index: 10;
   }
   .modal ul {
     padding-right: 0;
@@ -2823,10 +2846,10 @@ button.swiper-pagination-bullet {
   }
   .modal--action {
     padding-top: 80px;
-    top: 70%;
   }
   .modal--action h2 {
     margin-bottom: 40px;
+    max-width: 250px;
   }
   .modal__close {
     width: 40px;
