@@ -397,7 +397,13 @@ body {
   line-height: 21px;
   font-weight: 600;
   color: #666666;
-  overflow-x: hidden;
+  overflow-x: hidden !important;
+  max-width: 100% !important;
+  position: relative;
+}
+html {
+  overflow-x: hidden !important;
+  max-width: 100% !important;
 }
 img {
   max-width: 100%;
