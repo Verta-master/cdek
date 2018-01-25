@@ -2,11 +2,13 @@
 $('.menu__btn').click(function() {
   $(this).next().slideToggle();
   $('.menu').toggleClass('menu--closed');
+//  $('.header__call').toggleClass('header__link--show');
 });
 $('.menu__link').click(function() {
   $('.menu__wrap').slideUp();
   $('.menu__btn').html('НАВИГАЦИЯ');
   $('.menu').addClass('menu--closed');
+//  $('.header__call').removeClass('header__link--show');
 });
 
 var navToggle = document.querySelector('.menu__btn');
