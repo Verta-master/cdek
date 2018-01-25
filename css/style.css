@@ -2881,6 +2881,9 @@ button.swiper-pagination-bullet {
     margin-left: 20px;
     margin-right: 20px;
   }
+  .company__btn {
+    max-width: 100%;
+  }
 }
 @media (max-width: 766px) and (orientation: landscape) {
   .modal--action {
