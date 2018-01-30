@@ -1562,6 +1562,15 @@ button.swiper-pagination-bullet {
   background-color: #ffffff;
   -webkit-box-shadow: 0px 2px 11.7px 1.3px rgba(35, 38, 50, 0.07);
           box-shadow: 0px 2px 11.7px 1.3px rgba(35, 38, 50, 0.07);
+  -webkit-transition: ease-out 0.3s;
+  transition: ease-out 0.3s;
+}
+.actions__link:hover,
+.actions__link:active {
+  background-color: #d7d6d6;
+  color: #fff;
+  -webkit-transition: ease-out 0.3s;
+  transition: ease-out 0.3s;
 }
 .actions__btn {
   min-height: 42px;
